@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>CourtsFrontend</title>
+  <title><%= [yield(:title), 'Courts', 'GOV.UK'].join(' – ') %></title>
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= csrf_meta_tags %>
 </head>
