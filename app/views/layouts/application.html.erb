@@ -6,8 +6,12 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+  <div id="wrapper">
+    <main id="content" role="main" class="outer-block">
+      <div id="courts-frontend" class='inner-block'>
+        <%= yield %>
+      </div>
+    </main>
+  </div>
 </body>
 </html>

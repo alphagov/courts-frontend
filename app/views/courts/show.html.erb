@@ -1,2 +1,2 @@
 <% content_for :title, @court.title %>
-<h1><%= @court.title %></h1>
+<%= render partial: 'govuk_component/title', locals: { title: @court.title } %>

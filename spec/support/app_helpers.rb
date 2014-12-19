@@ -1,10 +1,14 @@
+require 'slimmer/test_helpers/shared_templates'
+
 module AppHelpers
+  include Slimmer::TestHelpers::SharedTemplates
+
   def expect_title_tag_to_be(text)
     expect(page).to have_selector("title", text: text, visible: false)
   end
 
   def expect_h1_to_be(text)
-    within('h1') do
+    within(shared_component_selector('title')) do
       expect(page).to have_content(text)
     end
   end
