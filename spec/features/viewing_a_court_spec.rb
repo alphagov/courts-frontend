@@ -12,4 +12,12 @@ feature 'Viewing a court' do
     expect_h1_to_be 'Total Perspective Vortex'
     expect_title_tag_to_be 'Total Perspective Vortex – Courts – GOV.UK'
   end
+
+  scenario 'Viewing a nonexistent court' do
+    stub_court_doesnt_exist('totally-made-up')
+
+    visit '/courts/totally-made-up'
+
+    expect_not_found_error
+  end
 end

@@ -9,6 +9,10 @@ module AppHelpers
     end
   end
 
+  def expect_not_found_error
+    expect(page.status_code).to be(404)
+  end
+
   def stub_court(court_slug="total-perspective-vortex", title="Total Perspective Vortex")
     path = "/courts/#{court_slug}"
     court_json = {
@@ -35,6 +39,10 @@ module AppHelpers
     }
 
     content_store_has_item(path, court_json)
+  end
+
+  def stub_court_doesnt_exist(court_slug)
+    content_store_does_not_have_item("/courts/#{court_slug}")
   end
 end
 RSpec.configuration.include AppHelpers, type: :feature
