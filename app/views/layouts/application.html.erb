@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>CourtsFrontend</title>
-  <%= stylesheet_link_tag    'application', media: 'all' %>
-  <%= csrf_meta_tags %>
+  <title><%= [yield(:title), 'Courts', 'GOV.UK'].join(' – ') %></title>
 </head>
 <body>
-
-<%= yield %>
-
+  <div id="wrapper">
+    <main id="content" role="main" class="outer-block">
+      <div id="courts-frontend" class='inner-block'>
+        <%= yield %>
+      </div>
+    </main>
+  </div>
 </body>
 </html>
