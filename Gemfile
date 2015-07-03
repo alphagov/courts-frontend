@@ -4,7 +4,7 @@ gem 'rails', '4.1.11'
 gem 'airbrake', '4.1.0'
 gem 'unicorn', '4.8.3'
 gem 'logstasher', '0.6.1'
-gem 'gds-api-adapters', '17.2.0'
+gem 'gds-api-adapters', '20.1.1'
 gem 'slimmer', '8.1.0'
 
 group :development, :test do
