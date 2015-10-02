@@ -5,7 +5,7 @@ gem 'airbrake', '4.1.0'
 gem 'unicorn', '4.8.3'
 gem 'logstasher', '0.6.1'
 gem 'gds-api-adapters', '20.1.1'
-gem 'slimmer', '8.1.0'
+gem 'slimmer', '9.0.0'
 
 group :development, :test do
   gem 'rspec-rails', '3.1.0'
