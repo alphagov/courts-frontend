@@ -120,7 +120,7 @@ GEM
       rspec-support (~> 3.1.0)
     rspec-support (3.1.2)
     safe_yaml (1.0.4)
-    slimmer (8.1.0)
+    slimmer (9.0.0)
       activesupport
       json
       nokogiri (>= 1.5.0, < 1.7.0)
@@ -161,6 +161,6 @@ DEPENDENCIES
   logstasher (= 0.6.1)
   rails (= 4.1.11)
   rspec-rails (= 3.1.0)
-  slimmer (= 8.1.0)
+  slimmer (= 9.0.0)
   unicorn (= 4.8.3)
   webmock (= 1.20.4)
